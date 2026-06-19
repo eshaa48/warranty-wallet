@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.esha48.warrantywallet"
     },
     "web": {
       "output": "static",
@@ -38,11 +39,31 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#2D5BE3",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow WarrantyWallet to access your photos to upload warranty images.",
+          "cameraPermission": "Allow WarrantyWallet to use your camera to capture warranty receipts."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "90222673-19bd-4d23-933f-b78866873e54"
+      }
     }
   }
 }
